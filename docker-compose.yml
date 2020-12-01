@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  bot:
+    env_file: .env
+    image: pythonfeet
+    working_dir: /usr/src/app
+    volumes: 
+      - ./app:/usr/src/app
+    networks:
+      - host
+    command: bash -c "python3 twitterbot.py"
+networks:
+  host:
