@@ -7,8 +7,7 @@ import time
 class TwitterBot:
 
     hashtags = [
-        'hockey', 'hockeylife', 'beerleaguehockey', 'beerleague', 'cawlidgehawkey', 
-        'nhl', 'hockeytwitter', 'hockeyplayer', 'juniorhockey',
+        'beerleaguehockey', 'beerleague', 'cawlidgehawkey', 'nhl', 'hockeytwitter', 'hockeyplayer', 'juniorhockey', 'ahl', 'echl'
     ]
 
     def __init__(self):
