@@ -2,7 +2,7 @@ version: "3.8"
 services:
   bot:
     env_file: .env
-    image: pythonfeet
+    image: ericrigsb/pythonfeet
     working_dir: /usr/src/app
     volumes: 
       - ./app:/usr/src/app
