@@ -8,6 +8,6 @@ services:
       - ./app:/usr/src/app
     networks:
       - host
-    command: bash -c "python3 twitterbot.py"
+    command: bash -c "python3 -u twitterbot.py"
 networks:
   host:

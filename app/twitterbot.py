@@ -25,7 +25,7 @@ class TwitterBot:
     def login(self):
         bot = self.bot
         bot.get('https://twitter.com/')
-        time.sleep(9)
+        time.sleep(10)
         
         email = bot.find_element_by_name('session[username_or_email]')
         password = bot.find_element_by_name('session[password]')
@@ -42,7 +42,7 @@ class TwitterBot:
         bot = self.bot
         time.sleep(6)
         for hashtag in self.hashtags:
-            bot.get('https://twitter.com/search?q='+hashtag+'&src=typd')
+            bot.get('https://twitter.com/search?q=%23'+hashtag+'&src=typd')
             time.sleep(12)
             links = set()
             for i in range(1):
