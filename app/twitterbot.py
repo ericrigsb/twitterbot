@@ -43,6 +43,7 @@ class TwitterBot:
         time.sleep(6)
         for hashtag in self.hashtags:
             bot.get('https://twitter.com/search?q=%23'+hashtag+'&src=typd')
+            print('Working on #'+hashtag+'.')
             time.sleep(12)
             links = set()
             for i in range(1):
