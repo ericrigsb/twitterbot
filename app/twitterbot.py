@@ -8,7 +8,7 @@ import time
 class TwitterBot:
 
     hashtags = [
-        'beerleaguehockey', 'beerleague', 'cawlidgehawkey', 'nhl', 'hockeytwitter', 'hockeyplayer', 'juniorhockey', 'ahl', 'echl'
+        'beerleaguehockey', 'beerleague', 'cawlidgehawkey', 'nhl', 'hockeytwitter', 'hockeyplayer', 'juniorhockey', 'ahl', 'echl', 'nwhl'
     ]
 
     def __init__(self):
@@ -24,7 +24,7 @@ class TwitterBot:
         
     def login(self):
         bot = self.bot
-        bot.get('https://twitter.com/')
+        bot.get('https://twitter.com/login')
         time.sleep(10)
         
         email = bot.find_element_by_name('session[username_or_email]')
