@@ -26,7 +26,7 @@ class TwitterBot:
     def login(self):
         bot = self.bot
         bot.get('https://twitter.com/login')
-        time.sleep(10)
+        time.sleep(15)
         
         email = bot.find_element_by_name('session[username_or_email]')
         password = bot.find_element_by_name('session[password]')
